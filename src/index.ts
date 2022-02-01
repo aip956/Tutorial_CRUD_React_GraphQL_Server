@@ -5,7 +5,15 @@ import { createConnection } from 'typeorm';
  
 
 const main = async () => {
-
+await createConnection({
+    type: "mysql",
+    database: "GraphqlCRUD",
+    username: "root",
+    password: "",
+    logging: true,
+    synchronize: false,
+    entities: [],
+});
     const app = express()
 app.use(cors())
 app.use(express.json())
