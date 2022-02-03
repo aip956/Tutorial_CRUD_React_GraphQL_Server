@@ -8,9 +8,9 @@ import { createConnection } from 'typeorm';
 const main = async () => {
 await createConnection({
     type: "mysql",
-    database: "GraphqlCRUD",
+    database: "GraphQLCRUD",
     username: "root",
-    password: "",
+    password: "root",
     logging: true,
     synchronize: false,
     entities: [],
